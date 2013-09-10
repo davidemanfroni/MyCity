@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+    <ImageButton 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:id="@+id/action_bar_button_logo" 
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        style="@style/MyCity.Button"
+        android:src="@drawable/nav_mycity">        
+    </ImageButton>
+    <ImageButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/action_bar_button_menu"
+        style="@style/MyCity.Button"
+        android:layout_centerVertical="true"
+        android:src="@drawable/nav_menu">
+    </ImageButton>
+    <ImageButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/action_bar_button_menu"
+        android:id="@+id/action_bar_button_support"
+        style="@style/MyCity.Button"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+    </ImageButton>
+</RelativeLayout>

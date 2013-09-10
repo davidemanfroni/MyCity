@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"           
+             android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerPadding="5dip"   
+        android:weightSum="1"         
+        android:showDividers="middle"
+        android:id="@+id/dettaglio_linearlayout"
+        android:orientation="vertical">             
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.3"
+            android:layout_height="0dp"
+            android:layout_margin="5dip"
+            android:background="@color/transparent"
+            android:id="@+id/dettaglio_map_container">       
+        </FrameLayout>
+        <FrameLayout 
+            android:layout_width="match_parent"                     
+            android:layout_weight="0.7"  
+            android:id="@+id/dettaglio_scroll_view_framelayout"
+            android:layout_height="0dp">
+            <ScrollView 
+                    android:layout_width="match_parent"                   
+                    android:id="@+id/dettaglio_scroll_view"     
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/transparent"
+                    android:dividerPadding="5dip"            
+                    android:showDividers="middle"
+        
+                    android:orientation="vertical">          >
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/divider"
+                        android:padding="5dip"    
+                        android:layout_margin="5dip"          
+                        android:background="@drawable/list_view_border"
+                        android:dividerPadding="1dp"
+                        android:showDividers="middle"
+                        android:orientation="vertical">     
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/MyCity.Dettaglio.Titolo"
+                            android:id="@+id/dettaglio_titolo">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                    
+                            style="@style/MyCity.Dettaglio.Sottotitolo"
+                            android:id="@+id/dettaglio_sotto_titolo">
+                        </TextView>          
+                        <TextView
+                            android:layout_width="match_parent"
+                            style="@style/MyCity.Dettaglio.Descrizione"
+                    
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dettaglio_descrizione">
+                        </TextView> 
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/dettaglio_view_pager"
+                            android:layout_width="fill_parent"
+                            android:padding="5dp"
+                            android:layout_height="300dip" >
+                        </android.support.v4.view.ViewPager>     
+                        <com.viewpagerindicator.LinePageIndicator
+                            android:id="@+id/dettaglio_pager_indicator"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_margin="10dip"
+                            android:layout_gravity="center_vertical|center_horizontal" >
+                        </com.viewpagerindicator.LinePageIndicator> 
+                    </LinearLayout>               
+                    <FrameLayout
+                        android:id="@+id/dettaglio_elenco_fragment_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+    </LinearLayout>
+    
+    <include layout="@layout/loading_box" />
+</FrameLayout>

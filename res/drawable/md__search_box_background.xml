@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  res/drawable/edittext_rounded_corners.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:state_pressed="true" android:state_focused="true">
+    <shape>
+        <solid android:color="@color/search_box_background_dark"/>
+        <stroke
+            android:width="2.3dp"
+            android:color="@color/transparent" />
+         <corners
+            android:radius="5dp" />
+    </shape>
+</item>
+
+<item android:state_pressed="true" android:state_focused="false">
+    <shape>
+        <solid android:color="@color/search_box_background_dark"/>
+        <stroke
+            android:width="2.3dp"
+            android:color="@color/search_box_background_dark" />      
+        <corners
+            android:radius="5dp" />       
+    </shape>
+</item>
+
+<item android:state_pressed="false" android:state_focused="true">
+    <shape>
+        <solid android:color="@color/search_box_background_dark"/>
+        <stroke
+            android:width="2.3dp"
+            android:color="@color/search_box_background_dark" />  
+        <corners
+            android:radius="5dp" />                          
+    </shape>
+</item>
+
+<item android:state_pressed="false" android:state_focused="false">
+    <shape>
+        <gradient 
+            android:startColor="@color/search_box_background_dark"
+            android:centerColor="@color/search_box_background_dark"
+            android:endColor="@color/search_box_background_dark"
+            android:angle="270"
+        />
+        <stroke
+            android:width="0.7dp"                
+            android:color="@color/transparent" /> 
+        <corners
+            android:radius="5dp" />            
+    </shape>
+</item>
+
+<item android:state_enabled="true">
+    <shape>
+        <padding 
+                android:left="4dp"
+                android:top="4dp"
+                android:right="4dp"
+                android:bottom="4dp"
+            />
+    </shape>
+</item>
+
+</selector>

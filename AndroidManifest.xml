@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.EGaspari.Mobile.Android.MyCity"
+          android:versionCode="8"
+          android:versionName="2.0.6">
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="17" />
+    <application android:label="MyCity" android:icon="@drawable/ic_launcher_mycity" android:largeHeap="true" android:theme="@style/SampleTheme.RightDrawer">
+        <activity android:name="SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="FullImageActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"> </activity>
+        <activity android:name="HomeActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"> </activity>
+        <activity android:name="HeaderFragmentActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"> </activity>
+        <activity android:name="HeaderActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"> </activity>
+        <activity android:name="MenuActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"> </activity>
+        <activity android:name="ElencoActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"></activity>
+        <activity android:name="GalleryActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"></activity>
+        <activity android:name="SegnalazioneActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"></activity>
+        <activity android:name="NuovaSegnalazioneActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"></activity>
+        <activity android:name="HeaderListActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"> </activity>
+        <activity android:name="DettaglioActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"></activity>
+        <activity android:name="MappaActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"></activity>
+        <activity android:name="QrCodeActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"></activity>
+        <activity android:name="WebActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"></activity>
+        <activity             
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>	
+        </activity>
+        <service android:name="com.EGaspari.Mobile.Android.MyCity.GCMIntentService" android:enabled="true"></service>
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.EGaspari.Mobile.Android.MyCity" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBJYgZan2hvDhf--1OPbz0SmltrIvUOp34"/>
+    </application>
+    <permission
+        android:name="com.EGaspari.Mobile.Android.MyCity.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission
+        android:name="com.EGaspari.Mobile.Android.MyCity.permission.C2D_MESSAGE" />
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-feature android:name="android.hardware.camera" />  
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <permission
+        android:name="com.EGaspari.Mobile.Android.MyCity.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.EGaspari.Mobile.Android.MyCity.permission.MAPS_RECEIVE"/>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+    
+</manifest>

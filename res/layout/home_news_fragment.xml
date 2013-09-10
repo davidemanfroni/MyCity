@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/home_news_layout"
+                    android:background="@drawable/list_view_border"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent" >
+    <com.EGaspari.Mobile.Objects.LoaderImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/home_news_image" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/home_shadow"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">        
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/MyCity.Home.News.Descrizione"
+        android:id="@+id/home_news_descrizione" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/MyCity.Home.News.Titolo"
+        android:id="@+id/home_news_titolo" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/MyCity.Home.News.Categoria"
+        android:layout_marginBottom="10dip"
+        android:id="@+id/home_news_categoria" />
+    </LinearLayout>
+</RelativeLayout>

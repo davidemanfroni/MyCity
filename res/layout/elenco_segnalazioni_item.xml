@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"      
+              style="@style/MyCity.Segnalazioni"      
+              android:id="@+id/segnalazione_item_layout"
+              android:layout_height="wrap_content" >
+    <com.EGaspari.Mobile.Objects.LoaderImageView
+        android:id="@+id/segnalazione_item_immagine"
+        android:layout_height="75dp"
+        android:padding="5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="75dp" />
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/segnalazione_item_data"
+            style="@style/MyCity.Segnalazioni.Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/segnalazione_item_titolo"
+            android:layout_width="match_parent"
+            style="@style/MyCity.Segnalazioni.Titolo"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/segnalazione_item_descrizione"
+            android:layout_width="match_parent"
+            style="@style/MyCity.Segnalazioni.Descrizione"
+            android:layout_height="wrap_content">
+        </TextView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/segnalazione_item_stato"
+                android:layout_width="wrap_content"
+                style="@style/MyCity.Segnalazioni.Stato"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:id="@+id/segnalazione_item_stato_testo"
+                android:layout_width="match_parent"
+                style="@style/MyCity.Segnalazioni.Stato"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

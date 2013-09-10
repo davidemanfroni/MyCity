@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources> 
+        <style name="WindowTitleBackground">     
+            <item name="android:background">@color/black</item>                 
+        </style>
+    <style name="MyCity"/>
+    <style name="MyCity.Menu"/>
+    <style name="MyCity.Elenco"/>
+    <style name="MyCity.Home"/>
+    <style name="MyCity.Home.News"/>
+    <style name="MyCity.Home.News.Categoria">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="MyCity.Home.News.Titolo">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="MyCity.Home.News.Descrizione">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="MyCity.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    <style name="MyCity.SearchBox">
+        <item name="android:background">@drawable/search_box_background</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MyCity.Menu.Item">
+        <item name="android:background">@drawable/menu_background</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="MyCity.ErrorDialog">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">15dip</item>
+        <item name="android:paddingBottom">15dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="MyCity.Elenco.Item">
+        <item name="android:background">@drawable/elenco_background</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingRight">5dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>   
+    <style name="MyCity.Elenco.Item.Title">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/app</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="MyCity.Elenco.Item.Description">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="MyCity.Elenco.Category">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@color/category</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:enabled">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+    <style name="MyCity.QrCode"/>
+    <style name="MyCity.QrCode.Category">
+        <item name="android:background">@drawable/list_view_border</item>
+        <item name="android:textColor">@color/app</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:enabled">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MyCity.QrCode.Item">
+        <item name="android:background">@drawable/elenco_background</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MyCity.Impostazioni"/>
+    <style name="MyCity.Impostazioni.Item">       
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MyCity.Impostazioni.Item.Title">
+        <item name="android:background">@drawable/elenco_impostazioni_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MyCity.Impostazioni.Category">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/app</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MyCity.SearchBox">
+        <item name="android:background">@drawable/search_box_background</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>   
+    <style name="MyCity.Segnalazioni">
+        <item name="android:background">@drawable/elenco_background</item>          
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MyCity.Segnalazioni.Data" >
+        <item name="android:ellipsize">end</item> 
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <style name="MyCity.Segnalazioni.Titolo" >
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@color/app</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:ellipsize">end</item> 
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="MyCity.Segnalazioni.Descrizione" >
+        <item name="android:background">@color/transparent</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:ellipsize">end</item> 
+        <item name="android:textSize">18sp</item>
+    </style>   
+    <style name="MyCity.Segnalazioni.Stato" >
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:ellipsize">end</item> 
+        <item name="android:textSize">18sp</item>
+    </style> 
+    <style name="MyCity.Dettaglio" >
+        <item name="android:background">@color/windowBackground</item>
+        <item name="android:padding">5dp</item>
+    </style> 
+    <style name="MyCity.Dettaglio.Titolo" >
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@color/app</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="MyCity.Dettaglio.Sottotitolo" >
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:autoLink">web|email|phone</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="MyCity.Dettaglio.Descrizione" >
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:autoLink">web|email|phone</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    
+    <style name="MenuDrawer" />
+    <style name="MenuDrawer.Item">
+        <item name="android:background">@drawable/md__list_selector_holo_dark</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MenuDrawer.Header">
+        <item name="android:background">@color/app</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    <style name="MenuDrawer.SearchBox">
+        <item name="android:background">@drawable/md__search_box_background</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>   
+    <style name="MenuDrawerStyle.Right" parent="Widget.MenuDrawer">
+        <item name="mdActiveIndicator">@drawable/menu_arrow_right</item>
+        <item name="mdMenuSize">315dp</item>
+    </style>
+</resources>

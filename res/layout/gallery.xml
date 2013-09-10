@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:id="@+id/layout_grid_view"
+        android:layout_width="match_parent">
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/gallery_grid_view"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:numColumns="3"
+                  android:paddingLeft="5dp"
+                  android:paddingRight="5dp"
+                  android:horizontalSpacing="10dp"
+                  android:verticalSpacing="10dp"
+                  android:gravity="center"
+                  android:stretchMode="columnWidth" >  
+        </GridView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:id="@+id/layout_view_pager"
+        android:layout_width="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/gallery_view_pager"
+            android:background="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+    <include layout="@layout/loading_box" />
+</FrameLayout>

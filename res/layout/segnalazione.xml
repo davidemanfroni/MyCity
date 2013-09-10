@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:id="@+id/segnalazione_layout"
+    android:layout_height="match_parent">
+    <LinearLayout 
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/transparent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:id="@+id/segnalazione_nuova_segnalazione_button"
+            android:src="@drawable/segnalazioni_nuova_it"
+            style="@style/MyCity.Button"
+            android:layout_weight="1">
+        </ImageButton>
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:id="@+id/segnalazione_le_mie_segnalazioni_button"
+            android:src="@drawable/segnalazioni_mie_it"
+            style="@style/MyCity.Button"
+            android:layout_weight="0.5">
+        </ImageButton>       
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="1.0"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@color/transparent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:id="@+id/segnalazione_informazioni_button"
+            android:src="@drawable/segnalazioni_info_it"
+            style="@style/MyCity.Button"
+            android:layout_weight="1">
+        </ImageButton>
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:id="@+id/segnalazione_tutte_le_segnalazioni_button"
+            android:src="@drawable/segnalazioni_tutte_it"
+            style="@style/MyCity.Button"
+            android:layout_weight="0.5">
+        </ImageButton>
+    </LinearLayout>
+</LinearLayout>
+<include layout="@layout/loading_box" />
+</FrameLayout>

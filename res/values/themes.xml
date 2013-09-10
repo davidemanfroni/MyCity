@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="customTheme" parent="android:Theme"> 
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>   
+    </style> 
+    <style name="SampleBase" parent="Theme.Sherlock.Light" />
+    <style name="SampleTheme.RightDrawer" parent="SampleBase">
+        <item name="menuDrawerStyle">@style/MenuDrawerStyle.Right</item>
+    </style>
+</resources>
+

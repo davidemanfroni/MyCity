@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              style="@style/MyCity.Impostazioni.Item"
+              android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/elenco_impostazioni_title"
+            android:layout_width="match_parent"
+            style="@style/MyCity.Impostazioni.Item.Title"
+            android:layout_height="wrap_content">
+        </TextView>
+        <ImageView
+            android:id="@+id/elenco_impostazioni_state"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"
+            android:src="@drawable/tick"
+            android:layout_height="wrap_content">
+        </ImageView>
+</RelativeLayout>
+
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              style="@style/MenuDrawer.Item"
+              android:layout_height="wrap_content">
+    <TextView android:layout_width="match_parent"            
+              android:layout_height="wrap_content"
+              
+              android:id="@+id/rowpreferenzetext" />
+    <RelativeLayout
+        android:layout_width="wrap_content"           
+        android:layout_height="match_parent">
+        <CheckBox    
+            android:layout_alignParentRight="true"      
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:id="@+id/rowpreferenzecheck"  />
+    </RelativeLayout>
+</LinearLayout>-->
